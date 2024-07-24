@@ -1,0 +1,17 @@
+.task-list {
+    margin-top: 10px;
+}
+
+.task-filter {
+    margin-bottom: 10px;
+}
+
+.task-filter input,
+.task-filter select {
+    color: rgb(101, 101, 101);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style:hidden;
+    margin: 2px;
+}

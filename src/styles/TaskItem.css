@@ -1,0 +1,62 @@
+
+.task-item {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.task-item.completed {
+    background-color: #2d2167;
+    box-shadow: 4px 4px 5px 3px rgb(0 0 0 / 36%);
+}
+
+.task-item.pending {
+    /* color: rgba(0, 0, 0, 0.696); */
+    background-color: #523ea7;
+    box-shadow: 4px 3px 6px 3px rgba(0, 0, 0, 0.231);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-action-button:hover {
+    background-color: #0056b3;
+}
+
+.task-item button{
+    border: none;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.task-item.pending button:hover{
+    background-color: #2d2167;
+    color: white;
+}
+
+.task-item.completed button:hover{
+    background-color: #9084c8;
+}
