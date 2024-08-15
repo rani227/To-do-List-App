@@ -23,12 +23,12 @@ const TaskList = ({ tasks, updateTask, deleteTask }) => {
                     placeholder="Search tasks..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="w-full md:w-1/2 p-2 mb-2 md:mb-0 bg-gray-300 text-black rounded"
+                    className="w-full md:w-1/2 p-2 mb-2 md:mb-0 bg-gray-300 placeholder-gray-800 text-black rounded"
                 />
                 <select
                     onChange={(e) => setFilter(e.target.value)}
                     value={filter}
-                    className="w-full md:w-1/3 p-2 bg-gray-300 text-white rounded"
+                    className="w-full md:w-1/3 p-2 bg-gray-300 text-gray-800 rounded"
                 >
                     <option value="All">All</option>
                     <option value="Completed">Completed</option>

@@ -18,7 +18,7 @@ const TaskForm = ({ addTask }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="pt-10 pb-5 px-10 bg-gray-800 text-white shadow-md">
+        <form onSubmit={handleSubmit} className="pt-10 pb-5 px-10 bg-gray-800 text-white">
             <div className="mb-4">
                 <input
                     type="text"
@@ -26,7 +26,7 @@ const TaskForm = ({ addTask }) => {
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     required
-                    className="w-full p-2 mb-2 bg-gray-300 text-gray-600 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-2 mb-2 bg-gray-300 placeholder-gray-800 text-gray-600 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
             </div>
             <div className="mb-4">
@@ -35,7 +35,7 @@ const TaskForm = ({ addTask }) => {
                     required
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    className="w-full p-2 bg-gray-300 text-gray-600 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-2 bg-gray-300 placeholder-gray-800 text-gray-600 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 ></textarea>
             </div>
             <div className="mb-4">
@@ -44,14 +44,14 @@ const TaskForm = ({ addTask }) => {
                     value={dueDate}
                     required
                     onChange={(e) => setDueDate(e.target.value)}
-                    className="w-full p-2 bg-gray-300 text-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-2 bg-gray-300 text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
             </div>
             <div className="mb-4">
                 <select
                     value={priority}
                     onChange={(e) => setPriority(e.target.value)}
-                    className="w-full p-2 bg-gray-300 text-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-2 bg-gray-300 text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                     <option value="Priority" disabled>Select Priority</option>
                     <option value="High">High</option>
@@ -61,7 +61,7 @@ const TaskForm = ({ addTask }) => {
             </div>
             <button
                 type="submit"
-                className="w-full py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full py-2 font-semibold bg-blue-700 text-white rounded hover:bg-blue-600 transition focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
                 Add Task
             </button>
